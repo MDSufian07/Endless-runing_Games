@@ -58,6 +58,7 @@ public class PlayerController : MonoBehaviour
         }
 
         transform.position = targetPosition;
+  
         //controller.center = controller.center;
         /*if (transform.position == targetPosition)
             return;
@@ -71,6 +72,7 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         controller.Move(direction * Time.fixedDeltaTime);
+       
     }
     private void Jump()
     {
